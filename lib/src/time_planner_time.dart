@@ -6,7 +6,7 @@ class TimePlannerTime extends StatelessWidget {
   /// Text it will be show as hour
   final String? time;
   final bool? setTimeOnAxis;
-  Color? color = Colors.white;
+  final Color? color;
 
   /// Show the hour for each row of time planner
   const TimePlannerTime({
@@ -15,7 +15,7 @@ class TimePlannerTime extends StatelessWidget {
     this.setTimeOnAxis,
     this.color,
   }) : super(key: key);
-
+  
   @override
   Widget build(BuildContext context) {
     return SizedBox(
