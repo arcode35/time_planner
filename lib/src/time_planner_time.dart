@@ -26,12 +26,12 @@ class TimePlannerTime extends StatelessWidget {
         child: setTimeOnAxis!
             ? Text(
                 time!,
-                style: TextStyle(color: color),
+                style: TextStyle(color: color, fontFamily: 'Quicksand'),
               )
             : Center(
                 child: Text(
                 time!,
-                style: TextStyle(color: color),
+                style: TextStyle(color: color, fontFamily: 'Quicksand'),
               )),
       ),
     );
