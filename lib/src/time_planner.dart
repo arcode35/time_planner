@@ -347,8 +347,10 @@ class _TimePlannerState extends State<TimePlanner> {
                                   height: (config.cellHeight! - 1).toDouble(),
                                 ),
                                 const Divider(
-                                  height: 1,
-                                ),
+                                    height: 1,
+                                    // horizontal line color
+                                    color:
+                                        const Color.fromRGBO(53, 51, 205, 1)),
                               ],
                             )
                         ],
@@ -368,7 +370,8 @@ class _TimePlannerState extends State<TimePlanner> {
                                   height:
                                       (config.totalHours * config.cellHeight!) +
                                           config.cellHeight!,
-                                  color: Colors.black,
+                                  // vertical line color
+                                  color: const Color.fromRGBO(53, 51, 205, 1),
                                 )
                               ],
                             )
