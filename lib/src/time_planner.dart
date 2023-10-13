@@ -265,7 +265,7 @@ class _TimePlannerState extends State<TimePlanner> {
                                     mainAxisSize: MainAxisSize.min,
                                     children: <Widget>[
                                       Container(
-                                        color: Colors.white,
+                                        color: Colors.black,
                                         height:
                                             (config.cellHeight! - 1).toDouble(),
                                       ),
@@ -273,7 +273,7 @@ class _TimePlannerState extends State<TimePlanner> {
                                       //TODO: Make a configurable color for this (maybe a size too)
                                       const Divider(
                                         height: 1,
-                                        color: Colors.white,
+                                        color: Colors.black,
                                       ),
                                     ],
                                   )
