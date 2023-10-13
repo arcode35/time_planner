@@ -198,10 +198,10 @@ class _TimePlannerState extends State<TimePlanner> {
                                     horizontal: !config.use24HourFormat ? 4 : 0,
                                   ),
                                   child: TimePlannerTime(
-                                    // this returns the formatted time string based on the use24HourFormat argument.
-                                    time: formattedTime(i),
-                                    setTimeOnAxis: config.setTimeOnAxis,
-                                  ),
+                                      // this returns the formatted time string based on the use24HourFormat argument.
+                                      time: formattedTime(i),
+                                      setTimeOnAxis: config.setTimeOnAxis,
+                                      color: Colors.white),
                                 )
                             ],
                           ),
