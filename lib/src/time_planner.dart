@@ -273,6 +273,7 @@ class _TimePlannerState extends State<TimePlanner> {
                                       //TODO: Make a configurable color for this (maybe a size too)
                                       const Divider(
                                         height: 1,
+                                        color: Colors.white,
                                       ),
                                     ],
                                   )
