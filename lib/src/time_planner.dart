@@ -368,7 +368,7 @@ class _TimePlannerState extends State<TimePlanner> {
                                   height:
                                       (config.totalHours * config.cellHeight!) +
                                           config.cellHeight!,
-                                  color: Colors.white,
+                                  color: Colors.black,
                                 )
                               ],
                             )
