@@ -265,9 +265,7 @@ class _TimePlannerState extends State<TimePlanner> {
                                     mainAxisSize: MainAxisSize.min,
                                     children: <Widget>[
                                       Container(
-                                        color: i.isOdd
-                                            ? style.interstitialOddColor
-                                            : style.interstitialEvenColor,
+                                        color: Colors.white,
                                         height:
                                             (config.cellHeight! - 1).toDouble(),
                                       ),
