@@ -44,7 +44,7 @@ class TimePlannerTask extends StatelessWidget {
       : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
+ Widget build(BuildContext context) {
     return Positioned(
       top: ((config.cellHeight! * (dateTime.hour - config.startHour)) +
               ((dateTime.minutes * config.cellHeight!) / 60))
@@ -64,12 +64,20 @@ class TimePlannerTask extends StatelessWidget {
                   onTap: onTap as void Function()? ?? () {},
                   child: Container(
                     height: ((minutesDuration.toDouble() * config.cellHeight!) /
-                        60), //60 minutes
+                        60),
                     width: (config.cellWidth!.toDouble() * (daysDuration ?? 1)),
-                    // (daysDuration! >= 1 ? daysDuration! : 1)),
                     decoration: BoxDecoration(
-                        borderRadius: config.borderRadius,
-                        color: color ?? Theme.of(context).primaryColor),
+                      borderRadius: config.borderRadius,
+                      color: color ?? Theme.of(context).primaryColor,
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black.withOpacity(0.1),
+                          spreadRadius: 1,
+                          blurRadius: 4,
+                          offset: Offset(0, 3),
+                        ),
+                      ],
+                    ),
                     child: Center(
                       child: child,
                     ),
